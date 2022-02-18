@@ -1,0 +1,47 @@
+body{
+  font-family: 'Roboto', sans-serif;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+thead {
+  background: hsl(236, 44%, 19%);
+  color: white;
+}
+td, th {
+  padding: 5px;
+}
+td{
+  text-decoration: underline 1px rgba(0, 0, 0, 0);
+  transition-duration: 0.3s;
+}
+td:hover{
+  text-decoration: underline 1px black;
+  background: inherit;
+  transition-duration: 0.3s;
+}
+body{
+  margin: 0;
+  background-color: antiquewhite;
+}
+
+tbody > tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+tbody > tr:nth-child(odd) {
+  background-color: #ffffff;
+}
+
+.container{
+  width: 80%;
+  margin: auto;
+  padding: 15px;
+}
+img{
+  width: 200px;
+}
+.text-center{
+  text-align: center;
+}

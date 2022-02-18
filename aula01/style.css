@@ -1,0 +1,128 @@
+body{
+  font-family: 'Roboto', sans-serif;
+}
+table {
+  border-collapse: collapse;
+}
+
+thead {
+  background: hsl(236, 44%, 19%);
+  color: white;
+}
+td, th {
+  padding: 5px;
+}
+td{
+  text-decoration: underline 1px rgba(0, 0, 0, 0);
+  transition-duration: 0.3s;
+}
+td:hover{
+  text-decoration: underline 1px black;
+  background: inherit;
+  transition-duration: 0.3s;
+}
+
+tbody > tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+tbody > tr:nth-child(odd) {
+  background-color: #ffffff;
+}
+.row{
+  display: grid;
+  grid-column-gap: 15px;
+  grid-template-columns: repeat(12, 1fr);
+}
+@media (min-width: 992px){
+  .row{
+    grid-column-gap: 30px;
+    grid-template-columns: repeat(12, minmax(0px, 65px));
+  }
+}
+.col-1{
+  grid-column: span 1 / auto;
+}
+.col-2{
+  grid-column: span 2 / auto;
+}
+.col-3{
+  grid-column: span 3 / auto;
+}
+.col-4{
+  grid-column: span 4 / auto;
+}
+.col-5{
+  grid-column: span 5 / auto;
+}
+.col-6{
+  grid-column: span 6 / auto;
+}
+.col-7{
+  grid-column: span 7 / auto;
+}
+.col-8{
+  grid-column: span 8 / auto;
+}
+.col-9{
+  grid-column: span 9 / auto;
+}
+.col-10{
+  grid-column: span 10 / auto;
+}
+.col-11{
+  grid-column: span 11 / auto;
+}
+.col-12{
+  grid-column: span 12 / auto;
+}
+.container{
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.btn {
+  border: none;
+  border-radius: 20px;
+  padding: 5px 15px;
+  transition-duration: 0.2s;
+  filter: brightness(1);
+
+}
+.btn:hover{
+  filter: brightness(0.9);
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.233); 
+  cursor: pointer;
+  transition-duration: 0.3s;
+}
+
+.btn.btn-editar {
+  background: hsl(44, 100%, 55%);
+}
+
+.btn.btn-atualizar {
+  background: rgb(31, 206, 31);
+}
+
+.btn.btn-remover {
+  background: rgb(206, 37, 31);
+  color: hsl(0, 0%, 100%);
+}
+.d-block{
+  display: block;
+}
+.limit {
+  width: 80%;
+  margin: auto;
+}
+input{
+  width: 100%;
+  padding: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.479);
+  border-radius: 3px;
+  transition: 0.3s;
+}
+input:focus-visible{
+  outline: 2px solid hsl(194, 100%, 56%);
+  /* outline: none; */
+  transition: 0.2s;
+}
